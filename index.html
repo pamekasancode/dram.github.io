@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Drum Final Project</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="topbar">
+		<div class="container">
+			<i class="float-right msc" id="modalBtn" data-target="music">&#9835</i>
+			<i class="abt" id="modalBtn" data-target="about">Tentang Dram</i>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<div class="app">
+				<div class="header">
+					<center><img src="dram.png" width="100" id="modalBtn" data-target="about"></center>
+				</div>
+				<div class="row">
+					<div class="col-6 col-lg-2">
+						<button id="drum" data-code="65">Open</button>
+					</div>
+					<div class="col-6 col-lg-2">
+						<button id="drum" data-code="83">Close</button>
+					</div>
+					<div class="col-6 col-lg-2">
+						<button id="drum" data-code="68">Crash</button>
+					</div>
+					<div class="col-6 col-lg-2">
+						<button id="drum" data-code="70">Tom</button>
+					</div>
+					<div class="col-6 col-lg-2">
+						<button id="drum" data-code="71">Bass</button>
+					</div>
+					<div class="col-6 col-lg-2">
+						<button id="drum" data-code="32">Snare</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span class="infoBottom" id="modalBtn" data-target="info"><p>Cara Bermain?</p></span>
+	<div class="about">
+		<div class="context">
+			<i class="float-right closeModal">&times</i>
+			<img src="dram.png" width="150">
+			<p>Dram adalah sebuah Website game drum, yang dapat kalian mainkan di pc / smartphone. Mungkin akan ada sedikit delay jika dimainkan dengan menggunakan Smartphone. Web ini dikembangkan oleh Komunitas PamekasanCode.</p>
+			<p>Yuk Follow Ig Mimin: </p>
+			<a href="https://instagram.com/firmansyahken" class="btn btn-primary">Follow</a>
+		</div>
+	</div>
+	<div class="music">
+		<div class="container">
+			<i class="float-right closeModal">&times</i>
+			<h3>Music</h3>
+			<p>Pilih music yang tersedia dari perangkat seluler/pc anda.</p>
+			<div class="input-group">
+				<input type="file" class="form-control" multiple>
+			</div>
+		</div>
+	</div>
+	<div class="info">
+		<div class="container">
+			<h3>Cara Bermain Di Computer</h3>
+			<p>Gunakan keyboard kalian untuk memainkannya</p>
+			<p>Berikut kode keyboard: </p>
+			<p>A : Open</p>
+			<p>S : Close</p>
+			<p>D : Crash</p>
+			<p>F : Tom</p>
+			<p>G : Bass</p>
+			<p>Space : Snare</p>
+			<p>Untuk memutar music, klik icon music lalu pilih file music yang kalian mau!</p>
+			<button class="btn btn-danger closeModal">Close</button>
+		</div>
+	</div>
+	<audio id="mymusic" autoplay="autoplay"></audio>
+	<audio src="jamkit/open hh.ogg" data-target="65"></audio>
+	<audio src="jamkit/closehh.ogg" data-target="83"></audio>
+	<audio src="jamkit/crash.ogg" data-target="68"></audio>
+	<audio src="jamkit/tom1.ogg" data-target="70"></audio>
+	<audio src="jamkit/bass.ogg" data-target="71"></audio>
+	<audio src="jamkit/snare.ogg" data-target="32"></audio>
+	<script src="app.js"></script>
+</body>
+</html>
